@@ -2,6 +2,14 @@
 Uses docker compose to bring up, pinger, proxy-1, proxy-2 and ponger.
 pinger can reach ponger via proxy-1 and proxy-2. Prints the metrics for each path.
 
+```
+                  ______ proxy1______
+                 |                   |
+             pinger               ponger
+                 |                   |
+                 ------- proxy2 ------
+```
+
 # To bring the containers up, run
 docker compose up -d
 
